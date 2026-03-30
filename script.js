@@ -130,3 +130,25 @@ if (totalCost > 50) {
 
 // Display conditional messages on the page
 document.getElementById("conditionalOutput").innerHTML = conditionalMessages;
+
+
+// ==========================
+// Extra Credit: typeof
+// ==========================
+
+// five different values with different types
+var typeVal1 = 42;
+var typeVal2 = "hello";
+var typeVal3 = true;
+var typeVal4 = undefined;
+var typeVal5 = { name: "Nick" };
+
+// check the type of each one using typeof
+var typeofHTML = "<p>'42' (number literal) → typeof: " + typeof typeVal1 + "</p>" +
+                 "<p>'hello' (text) → typeof: " + typeof typeVal2 + "</p>" +
+                 "<p>'true' (boolean) → typeof: " + typeof typeVal3 + "</p>" +
+                 "<p>undefined → typeof: " + typeof typeVal4 + "</p>" +
+                 "<p>{ name: 'Nick' } (object) → typeof: " + typeof typeVal5 + "</p>";
+
+// show the results on the page
+document.getElementById("typeofOutput").innerHTML = typeofHTML;
